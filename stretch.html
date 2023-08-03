@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stretch</title>
+    <style>
+        .container{
+            border: 3px dotted steelblue;
+            display: flex;
+            align-items: stretch;
+            height: 300px;
+        }
+        .box{
+            font-size: 3em;
+            font-weight: 700;
+            border: 3px solid blueviolet;
+            margin: 10px;
+        }
+        #box-2{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box" id="box-2">Box 2</div>
+    </div>
+</body>
+</html>
